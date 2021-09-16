@@ -62,9 +62,26 @@ void Task4()
 	else
 		std::cout << "Число " << a << " является простым\n\n\n";
 }
+
+void Task5()
+{
+	int a = 0, b = 0;
+	std::cout << "Введите год от 1 до 3`000 - ";
+	std::cin >> a;
+
+	for (int i = 2; i < a; i = i = i +3)
+	{
+		{if (a % 4 != 0)b++; }
+	}
+	if (b > 0)
+		std::cout << a << " не високосный год\n\n\n";
+	else
+		std::cout << a << " високосный год\n\n\n";
+}
 int main()
 {
 	setlocale(LC_ALL, "Russian");
+	Task5();
 	Task4();
 	Task1();
 	Task2();
