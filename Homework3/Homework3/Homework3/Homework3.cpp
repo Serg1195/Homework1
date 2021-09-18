@@ -69,11 +69,7 @@ void Task5()
 	std::cout << "Введите год от 1 до 3`000 - ";
 	std::cin >> a;
 
-	for (int i = 2; i < a; i = i = i +3)
-	{
-		{if (a % 4 != 0)b++; }
-	}
-	if (b > 0)
+	if (a % 4 != 0)
 		std::cout << a << " не високосный год\n\n\n";
 	else
 		std::cout << a << " високосный год\n\n\n";
