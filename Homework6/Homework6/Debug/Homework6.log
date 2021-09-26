@@ -1,0 +1,5 @@
+﻿  Homework6.cpp
+Homework6.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl MyLib::DinamicArr(int)" (?DinamicArr@MyLib@@YAXH@Z) в функции _main.
+Homework6.obj : error LNK2019: ссылка на неразрешенный внешний символ "void __cdecl MyLib::PrintArr(int)" (?PrintArr@MyLib@@YAXH@Z) в функции _main.
+Homework6.obj : error LNK2019: ссылка на неразрешенный внешний символ "int __cdecl MyLib::Calculation(char)" (?Calculation@MyLib@@YAHD@Z) в функции _main.
+C:\Users\Serg\Desktop\Homework1\Homework6\Debug\Homework6.exe : fatal error LNK1120: неразрешенных внешних элементов: 3
