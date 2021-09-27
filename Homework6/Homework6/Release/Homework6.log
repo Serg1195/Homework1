@@ -1,5 +1,0 @@
-﻿  Homework6.cpp
-Homework6.obj : error LNK2001: неразрешенный внешний символ "void __cdecl DinamicArr(int)" (?DinamicArr@@YAXH@Z).
-Homework6.obj : error LNK2001: неразрешенный внешний символ "int __cdecl Calculation(char)" (?Calculation@@YAHD@Z).
-Homework6.obj : error LNK2001: неразрешенный внешний символ "void __cdecl PrintArr(int)" (?PrintArr@@YAXH@Z).
-C:\Users\Serg\Desktop\Homework1\Homework6\Release\Homework6.exe : fatal error LNK1120: неразрешенных внешних элементов: 3

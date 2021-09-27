@@ -1,31 +1,35 @@
 #include <iostream>
 #include <fstream>
-using namespace std;
-namespace myLib
-{
-    void DinamicArr(int length=10)
+
+
+
+
+    
+
+    float* DinamicArr(int length = 19)
     {
-
-        unsigned float* ptr;
-
-        ptr = new (nothrow) unsigned int[length];
+        float* ptr = new (std::nothrow) float[length];
         if (ptr != nullptr)
         {
-            ptr[0] = 1;
-            for (int i = 1; i < length + 1; i++)
-                ptr[i] = -20 + rand()%20;
+            int j = 0;
+            for (int i = 0; i < length; i++)
+            {
 
+                ptr[i] = (float)-5 + std::rand() % 10;
 
+                // std::cout << ptr[i] << "\t";
+            }
         }
+        return ptr;
     }
 
-    void PrintArr(int length=10)
-    {
-        for (int i = 1; i < length + 1; i++)
-            cout << ptr[i];
+    void printArr(float* ptr, int length = 19) {
+        for (int i = 0; i < length; ++i)
+            std::cout << " " << ptr[i];
+        std::cout << std::endl;
     }
 
-    int Calculation(char plusminus='+')
+    int Calculation(float* ptr, char plusminus = '+', int length = 19)
     {
         int plus = 0, minus = 0;
         for (int i = 1; i < length + 1; i++)
@@ -35,7 +39,8 @@ namespace myLib
                 plus++;
         if (plusminus == '-')
             return minus;
-            if (plusminus=='+')
-                return plus;
+        else if (plusminus == '+')
+            return plus;
+        else
+            return -1;
     }
-}
